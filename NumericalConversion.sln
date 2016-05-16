@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumericalConversion", "NumericalConversion\NumericalConversion.csproj", "{9BF1B1E2-486D-4E20-9205-D8F6F8F8509E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumericalConversionTest", "NumericalConversionTest\NumericalConversionTest.csproj", "{45BF5305-8B37-4431-AB8C-4E4DDB85C4D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BF1B1E2-486D-4E20-9205-D8F6F8F8509E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BF1B1E2-486D-4E20-9205-D8F6F8F8509E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BF1B1E2-486D-4E20-9205-D8F6F8F8509E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BF1B1E2-486D-4E20-9205-D8F6F8F8509E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45BF5305-8B37-4431-AB8C-4E4DDB85C4D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45BF5305-8B37-4431-AB8C-4E4DDB85C4D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45BF5305-8B37-4431-AB8C-4E4DDB85C4D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45BF5305-8B37-4431-AB8C-4E4DDB85C4D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
