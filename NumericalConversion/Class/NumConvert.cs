@@ -7,7 +7,7 @@ namespace NumericalConversion.Class
 {
     public class NumConvert
     {
-        private const int MAX_CONVERT = 10000000;
+        private const int MAX_CONVERT = 1000000000;
         // Create instance of Loopup class
         Lookup looktable = new Lookup();
 
@@ -48,7 +48,27 @@ namespace NumericalConversion.Class
             if (WhoNum > MAX_CONVERT || WhoNum < 0 || DecNum < 0) { return ""; }
             while (WhoNum != 0)
             {
-                if (WhoNum >= 1000000 && WhoNum <= 9999999)
+                if (WhoNum >= 100000000 && WhoNum <= 999999999)
+                {
+                    var kvp = looktable.getHundredsMillions(WhoNum);
+                    output += kvp.Key;
+                    if (kvp.Value < 9990999) { output += "Million "; } else if (kvp.Value > 0) { output += "and "; }
+                    WhoNum = kvp.Value;
+                }
+                else if (WhoNum >= 20000000 && WhoNum <= 99999999)
+                {
+                    var kvp = looktable.getTensMillions(WhoNum);
+                    output += kvp.Key;
+                    if (kvp.Value < 999999) { output += "Million "; } //else if (kvp.Value > 0) { output += "and "; }
+                    WhoNum = kvp.Value;
+                }
+                else if (WhoNum >= 10000000 && WhoNum <= 19999999)
+                {
+                    var kvp = looktable.getTeenMillions(WhoNum);
+                    output += kvp.Key;
+                    WhoNum = kvp.Value;
+                }
+                else if (WhoNum >= 1000000 && WhoNum <= 9999999)
                 {
                     var kvp = looktable.getMillions(WhoNum);
                     output += kvp.Key;
