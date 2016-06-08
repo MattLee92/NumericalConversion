@@ -30,3 +30,4 @@ C:\Users\Matthew\Documents\Visual Studio 2015\Projects\NumericalConversion\Numer
 C:\Users\Matthew\Documents\Visual Studio 2015\Projects\NumericalConversion\NumericalConversion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Matthew\Documents\Visual Studio 2015\Projects\NumericalConversion\NumericalConversion\obj\Debug\NumericalConversion.dll
 C:\Users\Matthew\Documents\Visual Studio 2015\Projects\NumericalConversion\NumericalConversion\obj\Debug\NumericalConversion.pdb
+C:\Users\Matthew\Documents\Visual Studio 2015\Projects\NumericalConversion\NumericalConversion\obj\Debug\NumericalConversion.csprojResolveAssemblyReference.cache

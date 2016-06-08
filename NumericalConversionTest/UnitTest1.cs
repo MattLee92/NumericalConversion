@@ -13,7 +13,7 @@ namespace NumericalConversionTest
         {
 
             decimal userinput = 123.20m;
-            string expected = "One Hundred and Twenty Three dollars and Twenty cents";
+            string expected = "One Hundred and Twenty-Three dollars and Twenty cents";
 
             var result = testconverter.convertInput(userinput);
 
@@ -21,18 +21,6 @@ namespace NumericalConversionTest
 
         }
 
-        [TestMethod]
-        public void test_incorrect_input()
-        {
-
-            decimal userinput = 100000;
-            string expected = "";
-
-            var result = testconverter.convertInput(userinput);
-
-            Assert.AreEqual(result, expected);
-
-        }
 
         [TestMethod]
         public void test_input_singular()
@@ -46,5 +34,27 @@ namespace NumericalConversionTest
             Assert.AreEqual(result, expected);
 
         }
+
+        [TestMethod]
+        public void test_input_millions_correctWords()
+        {
+
+            decimal userinput = 1258369;
+            string expected = "One Million Two Hundred and Fifty Eight Thousand Three Hundred and Sixty-Nine dollars ";
+
+            var result = testconverter.convertInput(userinput);
+
+            Assert.AreEqual(result, expected);
+
+        }
+
+
+
+
+
+
+
+
+
     }
 }

@@ -7,9 +7,14 @@ namespace NumericalConversion.Class
 {
     public class NumConvert
     {
-        private const int MAX_CONVERT = 10000;
+        private const int MAX_CONVERT = 10000000;
         // Create instance of Loopup class
         Lookup looktable = new Lookup();
+
+        public int getMax()
+        {
+            return MAX_CONVERT;
+        }
 
         // Convert the numerical input into a verbal representation (string).
         public string convertInput(decimal input)
@@ -43,7 +48,33 @@ namespace NumericalConversion.Class
             if (WhoNum > MAX_CONVERT || WhoNum < 0 || DecNum < 0) { return ""; }
             while (WhoNum != 0)
             {
-                if (WhoNum >= 1000 && WhoNum <= 10000)
+                if (WhoNum >= 1000000 && WhoNum <= 9999999)
+                {
+                    var kvp = looktable.getMillions(WhoNum);
+                    output += kvp.Key;
+                    WhoNum = kvp.Value;
+                }
+               else if (WhoNum >= 100000 && WhoNum <= 999999)
+                {
+                    var kvp = looktable.getHundredsThousands(WhoNum);
+                    output += kvp.Key;
+                    if (kvp.Value < 9999) { output += "Thousand "; }else if (kvp.Value > 0) { output += "and "; }
+                    WhoNum = kvp.Value;
+                }
+                else if (WhoNum >= 20000 && WhoNum <= 99999)
+                {
+                    var kvp = looktable.getTensThousands(WhoNum);
+                    output += kvp.Key;
+                    if (kvp.Value < 999) { output += "Thousand "; } //else { output += ""; }
+                    WhoNum = kvp.Value;
+                }
+                else if (WhoNum >= 10000 && WhoNum <= 19999)
+                {
+                    var kvp = looktable.getTeenThousands(WhoNum);
+                    output += kvp.Key;
+                    WhoNum = kvp.Value;
+                }
+                else if (WhoNum >= 1000 && WhoNum <= 9999)
                 {
                     var kvp = looktable.getThousands(WhoNum);
                     output += kvp.Key;
@@ -62,6 +93,7 @@ namespace NumericalConversion.Class
                     hasten = true;
                     var kvp = looktable.getTens(WhoNum);
                     output += kvp.Key;
+                    if (kvp.Value != 0) { output += "-"; } else { output += " "; }
                     WhoNum = kvp.Value;
                 }
                 else if (WhoNum >= 10 && WhoNum <= 19)
@@ -107,6 +139,7 @@ namespace NumericalConversion.Class
                     {
                         var kvp = looktable.getTens(DecNum);
                         output += kvp.Key;
+                        if (kvp.Value != 0) { output += "-"; } else { output += " "; }
                         DecNum = kvp.Value;
                     }
                     else if (DecNum >= 10 && DecNum <= 19)

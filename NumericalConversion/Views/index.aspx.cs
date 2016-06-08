@@ -24,7 +24,7 @@ namespace NumericalConversion.Views
             try
             {
                 var input = Decimal.Parse(txt_input.Text);
-                if (input > 10000)
+                if (input >= test.getMax())
                 {
                     lbl_error.Text = "Input is to high";
                 }

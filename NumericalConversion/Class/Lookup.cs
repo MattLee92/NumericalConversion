@@ -10,6 +10,230 @@ namespace NumericalConversion.Class
     {
         // Function to return the String of converted number, aswell as the new number to be converted.
         // For numbers in the 'thousands' column
+        public KeyValuePair<String, int> getMillions(int input)
+        {
+
+            if (input >= 1000000 && input <= 1999999)
+            {
+
+                return new KeyValuePair<string, int>("One Million ", (input - 1000000));
+            }
+            else if (input >= 2000000 && input <= 2999999)
+            {
+
+                return new KeyValuePair<string, int>("Two Million ", (input - 2000000));
+            }
+            else if (input >= 3000000 && input <= 3999999)
+            {
+
+                return new KeyValuePair<string, int>("Three Million ", (input - 3000000));
+            }
+            else if (input >= 4000000 && input <= 4999999)
+            {
+
+                return new KeyValuePair<string, int>("Four Million ", (input - 4000000));
+            }
+            else if (input >= 5000000 && input <= 5999999)
+            {
+
+                return new KeyValuePair<string, int>("Five Million ", (input - 5000000));
+            }
+            else if (input >= 6000000 && input <= 6999999)
+            {
+
+                return new KeyValuePair<string, int>("Six Million ", (input - 6000000));
+            }
+            else if (input >= 7000000 && input <= 7999999)
+            {
+
+                return new KeyValuePair<string, int>("Seven Million ", (input - 7000000));
+            }
+            else if (input >= 8000000 && input <= 8999999)
+            {
+
+                return new KeyValuePair<string, int>("Eight Million ", (input - 8000000));
+            }
+            else if (input >= 9000000 && input <= 9999999)
+            {
+
+                return new KeyValuePair<string, int>("Nine Million ", (input - 9000000));
+            }
+
+
+            return new KeyValuePair<string, int>("", input); ;
+
+        }
+
+        // Function to return the String of converted number, aswell as the new number to be converted.
+        // For numbers in the 'thousands' column
+        public KeyValuePair<String, int> getHundredsThousands(int input)
+        {
+
+            if (input >= 100000 && input <= 199999)
+            {
+
+                return new KeyValuePair<string, int>("One Hundred ", (input - 100000));
+            }
+            else if (input >= 200000 && input <= 299999)
+            {
+
+                return new KeyValuePair<string, int>("Two Hundred ", (input - 200000));
+            }
+            else if (input >= 300000 && input <= 399999)
+            {
+
+                return new KeyValuePair<string, int>("Three Hundred ", (input - 300000));
+            }
+            else if (input >= 400000 && input <= 499999)
+            {
+
+                return new KeyValuePair<string, int>("Four Hundred ", (input - 400000));
+            }
+            else if (input >= 500000 && input <= 599999)
+            {
+
+                return new KeyValuePair<string, int>("Five Hundred ", (input - 500000));
+            }
+            else if (input >= 600000 && input <= 699999)
+            {
+
+                return new KeyValuePair<string, int>("Six Hundred ", (input - 600000));
+            }
+            else if (input >= 700000 && input <= 799999)
+            {
+
+                return new KeyValuePair<string, int>("Seven Hundred ", (input - 700000));
+            }
+            else if (input >= 800000 && input <= 899999)
+            {
+
+                return new KeyValuePair<string, int>("Eight Hundred ", (input - 800000));
+            }
+            else if (input >= 900000 && input <= 999999)
+            {
+
+                return new KeyValuePair<string, int>("Nine Hundred ", (input - 900000));
+            }
+
+
+            return new KeyValuePair<string, int>("", input); ;
+
+        }
+        // Function to return the String of converted number, aswell as the new number to be converted.
+        // For numbers in the 'thousands' column
+        public KeyValuePair<String, int> getTensThousands(int input)
+        {
+
+            if (input >= 20000 && input <= 29999)
+            {
+
+                return new KeyValuePair<string, int>("Twenty ", (input - 20000));
+            }
+            else if (input >= 30000 && input <= 39999)
+            {
+
+                return new KeyValuePair<string, int>("Thirty ", (input - 30000));
+            }
+            else if (input >= 40000 && input <= 49999)
+            {
+
+                return new KeyValuePair<string, int>("Forty ", (input - 40000));
+            }
+            else if (input >= 50000 && input <= 59999)
+            {
+
+                return new KeyValuePair<string, int>("Fifty ", (input - 50000));
+            }
+            else if (input >= 60000 && input <= 69999)
+            {
+
+                return new KeyValuePair<string, int>("Sixty ", (input - 60000));
+            }
+            else if (input >= 70000 && input <= 79999)
+            {
+
+                return new KeyValuePair<string, int>("Seventy ", (input - 70000));
+            }
+            else if (input >= 80000 && input <= 89999)
+            {
+
+                return new KeyValuePair<string, int>("Eighty ", (input - 80000));
+            }
+            else if (input >= 90000 && input <= 99999)
+            {
+
+                return new KeyValuePair<string, int>("Ninty ", (input - 90000));
+            }
+
+
+            return new KeyValuePair<string, int>("", input); ;
+
+        }
+
+        // Function to return the String of converted number, aswell as the new number to be converted.
+        // For numbers in the 'thousands' column
+        public KeyValuePair<String, int> getTeenThousands(int input)
+        {
+
+            if (input >= 10000 && input <= 10999)
+            {
+                return new KeyValuePair<string, int>("Ten Thousand ", (input - 10000));
+
+            }
+            else if (input >= 11000 && input <= 11999)
+            {
+
+                return new KeyValuePair<string, int>("Eleven Thousand ", (input - 11000));
+            }
+            else if (input >= 12000 && input <= 12999)
+            {
+
+                return new KeyValuePair<string, int>("Twelve Thousand ", (input - 12000));
+            }
+            else if (input >= 13000 && input <= 13999)
+            {
+
+                return new KeyValuePair<string, int>("Thirteen Thousand ", (input - 13000));
+            }
+            else if (input >= 14000 && input <= 14999)
+            {
+
+                return new KeyValuePair<string, int>("Fourteen Thousand ", (input - 14000));
+            }
+            else if (input >= 15000 && input <= 15999)
+            {
+
+                return new KeyValuePair<string, int>("Fifteen Thousand ", (input - 15000));
+            }
+            else if (input >= 16000 && input <= 16999)
+            {
+
+                return new KeyValuePair<string, int>("Sixteen Thousand ", (input - 16000));
+            }
+            else if (input >= 17000 && input <= 17999)
+            {
+
+                return new KeyValuePair<string, int>("Seventeen Thousand ", (input - 17000));
+            }
+            else if (input >= 18000 && input <= 18999)
+            {
+
+                return new KeyValuePair<string, int>("Eighteen Thousand ", (input - 18000));
+            }
+            else if (input >= 19000 && input <= 19999)
+            {
+
+                return new KeyValuePair<string, int>("Ninteen Thousand ", (input - 19000));
+            }
+         
+
+
+            return new KeyValuePair<string, int>("", input); ;
+
+        }
+
+        // Function to return the String of converted number, aswell as the new number to be converted.
+        // For numbers in the 'thousands' column
         public KeyValuePair<String, int> getThousands(int input)
         {
 
@@ -58,12 +282,7 @@ namespace NumericalConversion.Class
 
                 return new KeyValuePair<string, int>("Nine Thousand ", (input - 9000));
             }
-            else if (input == 10000)
-            {
-
-                return new KeyValuePair<string, int>("Ten Thousand ", (input - 10000));
-            }
-
+     
 
             return new KeyValuePair<string, int>("", input); ;
 
@@ -130,49 +349,53 @@ namespace NumericalConversion.Class
         // For numbers in the 'tens' column
         public KeyValuePair<String, int> getTens(int input)
         {
+    
+          
+        
+
             if (input >= 20 && input <= 29)
             {
 
-                return new KeyValuePair<string, int>("Twenty ", (input - 20));
+                return new KeyValuePair<string, int>("Twenty", (input - 20));
             }
             else if (input >= 30 && input <= 39)
             {
 
-                return new KeyValuePair<string, int>("Thirty ", (input - 30));
+                return new KeyValuePair<string, int>("Thirty", (input - 30));
             }
             else if (input >= 40 && input <= 49)
             {
 
-                return new KeyValuePair<string, int>("Forty ", (input - 40));
+                return new KeyValuePair<string, int>("Forty", (input - 40));
             }
             else if (input >= 50 && input <= 59)
             {
 
-                return new KeyValuePair<string, int>("Fifty ", (input - 50));
+                return new KeyValuePair<string, int>("Fifty", (input - 50));
             }
             else if (input >= 60 && input <= 69)
             {
 
-                return new KeyValuePair<string, int>("Sixty ", (input - 60));
+                return new KeyValuePair<string, int>("Sixty", (input - 60));
             }
             else if (input >= 70 && input <= 79)
             {
 
-                return new KeyValuePair<string, int>("Seventy ", (input - 70));
+                return new KeyValuePair<string, int>("Seventy", (input - 70));
             }
             else if (input >= 80 && input <= 89)
             {
 
-                return new KeyValuePair<string, int>("Eighty ", (input - 80));
+                return new KeyValuePair<string, int>("Eighty", (input - 80));
             }
             else if (input >= 90 && input <= 99)
             {
 
-                return new KeyValuePair<string, int>("Ninety ", (input - 90));
+                return new KeyValuePair<string, int>("Ninety", (input - 90));
             }
 
+            return new KeyValuePair<string, int>("", input);
 
-            return new KeyValuePair<string, int>("", input); ;
 
         }
 
