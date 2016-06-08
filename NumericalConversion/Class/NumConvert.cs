@@ -16,6 +16,7 @@ namespace NumericalConversion.Class
             return MAX_CONVERT;
         }
 
+
         // Convert the numerical input into a verbal representation (string).
         public string convertInput(decimal input)
         {
