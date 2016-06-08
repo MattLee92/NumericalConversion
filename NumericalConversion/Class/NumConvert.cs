@@ -52,14 +52,14 @@ namespace NumericalConversion.Class
                 {
                     var kvp = looktable.getHundredsMillions(WhoNum);
                     output += kvp.Key;
-                    if (kvp.Value < 9990999) { output += "Million "; } else if (kvp.Value > 0) { output += "and "; }
+                    if (kvp.Value < 1000000) { output += "Million "; } else if (kvp.Value > 0) { output += "and "; }
                     WhoNum = kvp.Value;
                 }
                 else if (WhoNum >= 20000000 && WhoNum <= 99999999)
                 {
                     var kvp = looktable.getTensMillions(WhoNum);
                     output += kvp.Key;
-                    if (kvp.Value < 999999) { output += "Million "; } //else if (kvp.Value > 0) { output += "and "; }
+                    if (kvp.Value < 999999) { output += "Million "; }
                     WhoNum = kvp.Value;
                 }
                 else if (WhoNum >= 10000000 && WhoNum <= 19999999)
@@ -85,7 +85,7 @@ namespace NumericalConversion.Class
                 {
                     var kvp = looktable.getTensThousands(WhoNum);
                     output += kvp.Key;
-                    if (kvp.Value < 999) { output += "Thousand "; } //else { output += ""; }
+                    if (kvp.Value < 999) { output += "Thousand "; } 
                     WhoNum = kvp.Value;
                 }
                 else if (WhoNum >= 10000 && WhoNum <= 19999)

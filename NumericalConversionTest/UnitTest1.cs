@@ -49,6 +49,20 @@ namespace NumericalConversionTest
         }
 
 
+        [TestMethod]
+        public void test_input_highest()
+        {
+
+            decimal userinput = 999999999.99m;
+            string expected = "Nine Hundred and Ninety Nine Million Nine Hundred and Ninety Nine Thousand Nine Hundred and Ninety-Nine dollars and Ninety-Nine cents";
+
+            var result = testconverter.convertInput(userinput);
+
+            Assert.AreEqual(result, expected);
+
+        }
+
+
 
 
 

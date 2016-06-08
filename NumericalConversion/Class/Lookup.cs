@@ -9,7 +9,7 @@ namespace NumericalConversion.Class
     public class Lookup
     {
         // Function to return the String of converted number, aswell as the new number to be converted.
-        // For numbers in the 'thousands' column
+        // For numbers in the 'Hundred Millions' column
         public KeyValuePair<String, int> getHundredsMillions(int input)
         {
             if (input >= 100000000 && input <= 199999999)
@@ -64,7 +64,7 @@ namespace NumericalConversion.Class
         }
 
         // Function to return the String of converted number, aswell as the new number to be converted.
-        // For numbers in the 'thousands' column
+        // For numbers in the 'Ten Millions' column
         public KeyValuePair<String, int> getTensMillions(int input)
         {
 
@@ -106,7 +106,7 @@ namespace NumericalConversion.Class
             else if (input >= 90000000 && input <= 99999999)
             {
 
-                return new KeyValuePair<string, int>("Ninty ", (input - 90000000));
+                return new KeyValuePair<string, int>("Ninety ", (input - 90000000));
             }
 
 
@@ -115,7 +115,7 @@ namespace NumericalConversion.Class
         }
 
         // Function to return the String of converted number, aswell as the new number to be converted.
-        // For numbers in the 'thousands' column
+        // For numbers in the 'Teen Millions' column
         public KeyValuePair<String, int> getTeenMillions(int input)
         {
 
@@ -176,7 +176,7 @@ namespace NumericalConversion.Class
         }
 
         // Function to return the String of converted number, aswell as the new number to be converted.
-        // For numbers in the 'thousands' column
+        // For numbers in the 'Millions' column
         public KeyValuePair<String, int> getMillions(int input)
         {
 
@@ -232,7 +232,7 @@ namespace NumericalConversion.Class
         }
 
         // Function to return the String of converted number, aswell as the new number to be converted.
-        // For numbers in the 'thousands' column
+        // For numbers in the 'Hundred thousands' column
         public KeyValuePair<String, int> getHundredsThousands(int input)
         {
 
@@ -287,7 +287,7 @@ namespace NumericalConversion.Class
 
         }
         // Function to return the String of converted number, aswell as the new number to be converted.
-        // For numbers in the 'thousands' column
+        // For numbers in the 'Ten thousands' column
         public KeyValuePair<String, int> getTensThousands(int input)
         {
 
@@ -329,7 +329,7 @@ namespace NumericalConversion.Class
             else if (input >= 90000 && input <= 99999)
             {
 
-                return new KeyValuePair<string, int>("Ninty ", (input - 90000));
+                return new KeyValuePair<string, int>("Ninety ", (input - 90000));
             }
 
 
@@ -338,7 +338,7 @@ namespace NumericalConversion.Class
         }
 
         // Function to return the String of converted number, aswell as the new number to be converted.
-        // For numbers in the 'thousands' column
+        // For numbers in the ' Teen thousands' column
         public KeyValuePair<String, int> getTeenThousands(int input)
         {
 
